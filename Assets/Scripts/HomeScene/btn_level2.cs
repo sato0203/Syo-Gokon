@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class btn_level2 : MonoBehaviour
 {
@@ -12,6 +13,6 @@ public class btn_level2 : MonoBehaviour
 
 	public void GoStage()
 	{
-		//SceneManager.LoadScene("");
+		SceneManager.LoadScene("InGame");
 	}
 }
