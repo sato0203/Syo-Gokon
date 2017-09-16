@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/result_scene.unity
     guid: f87720ce83aa74a14901c6e394a3a3e3
+  - enabled: 1
+    path: Assets/Scenes/InGame.unity
+    guid: 26816e51861e342e588ad68766f70652
