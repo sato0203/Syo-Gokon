@@ -28,7 +28,8 @@ public class InGameManager : SingletonMonoBehaviour<InGameManager> {
 	}
 
     public void LoadStage() {
-        
+        int stageNum = PlayerPrefs.GetInt("stage");
+        Instantiate(stages[stageNum], Vector3.zero, Quaternion.identity);
     }
 
     public void OnReleaseFinger(OnReleaseFingerData data) { 
