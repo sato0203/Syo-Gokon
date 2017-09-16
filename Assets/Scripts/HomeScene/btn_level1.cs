@@ -8,8 +8,8 @@ public class btn_level1 : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	void OnGUI() {
+
+	public void GoStage() {
 		//SceneManager.LoadScene("");
 	}
 }

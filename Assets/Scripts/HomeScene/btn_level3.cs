@@ -11,7 +11,7 @@ public class btn_level3 : MonoBehaviour
 
 	}
 
-	void OnGUI()
+	public void GoStage()
 	{
 		//SceneManager.LoadScene("");
 	}
