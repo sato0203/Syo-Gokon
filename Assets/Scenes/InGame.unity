@@ -478,10 +478,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1617451771445966, guid: 179a83466d58643b696c97d512cf8a15, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 179a83466d58643b696c97d512cf8a15, type: 2}
   m_IsPrefabParent: 0
@@ -533,14 +529,6 @@ Prefab:
     - target: {fileID: 4112700662801684, guid: 354bfded156b643448db586367749fae, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1976646184784646, guid: 354bfded156b643448db586367749fae, type: 2}
-      propertyPath: m_Name
-      value: syotaimen
-      objectReference: {fileID: 0}
-    - target: {fileID: 1976646184784646, guid: 354bfded156b643448db586367749fae, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 354bfded156b643448db586367749fae, type: 2}

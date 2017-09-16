@@ -13,6 +13,8 @@ public class btn_level2 : MonoBehaviour
 
 	public void GoStage()
 	{
+        PlayerPrefs.SetInt("stage", 1);
+        PlayerPrefs.Save();
 		SceneManager.LoadScene("InGame");
 	}
 }
