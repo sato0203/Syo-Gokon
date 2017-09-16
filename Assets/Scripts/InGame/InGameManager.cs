@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : SingletonMonoBehaviour<GameManager> {
+public class InGameManager : SingletonMonoBehaviour<InGameManager> {
 
 	// Use this for initialization
 	void Start () {
