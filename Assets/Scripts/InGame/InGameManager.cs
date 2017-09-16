@@ -38,7 +38,7 @@ public class InGameManager : SingletonMonoBehaviour<InGameManager> {
 	void Update () {
         elapsedSeconds = Time.deltaTime;
 
-        if (players.Where((PlayerTap arg) => arg.isGoal == false).Count() == 0)
+        if (players.Where((PlayerTap arg) => arg.isGoal == true).Count() >= 2)
         {
             Goal();
         }
@@ -46,7 +46,7 @@ public class InGameManager : SingletonMonoBehaviour<InGameManager> {
 
     public void LoadStage() {
         int stageNum = PlayerPrefs.GetInt("stage");
-        Instantiate(stages[stageNum], Vector3.zero, Quaternion.identity);
+        Instantiate(stages[stageNum]);
     }
 
     public void OnReleaseFinger(OnReleaseFingerData data) {
