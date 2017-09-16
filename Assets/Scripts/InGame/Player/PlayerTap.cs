@@ -13,10 +13,12 @@ public class PlayerTap : MonoBehaviour
     //タップされている(true)か否か
     public bool isTap;
     private AudioSource badAudio;
+    public bool isGoal { get; private set;}
 
     private void Start()
     {
         isTap = false;
+        isGoal = false;
         badAudio = GetComponent<AudioSource>();
     }
 
@@ -64,7 +66,7 @@ public class PlayerTap : MonoBehaviour
     {
         Debug.Log("02:Player_UnTouch");
         //ゲーム進行中　＆＆　離した＝ゲームオーバー
-        //InGameManager.Instance
+        InGameManager.Instance.OnReleaseFinger(new OnReleaseFingerData());
         isTap = false;
     }
 
@@ -74,8 +76,13 @@ public class PlayerTap : MonoBehaviour
         {
             Debug.Log("全体マイナススコア");
             badAudio.Play();
-            //InGameManager.Instance
+            InGameManager.Instance.DeleteScore();
             invisibleTime = 60.0f;
         }
+        if(collision.gameObject.tag == "Goal")
+        {
+            isGoal = true;
+        }
+
     }
 }
